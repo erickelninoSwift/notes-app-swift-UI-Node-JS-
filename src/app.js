@@ -1,7 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const noteRoutes = require("./routes/noteRoutes");
 const { notFound, errorHandler } = require("./middleware/errorHandler");
+
 
 const app = express();
 
