@@ -1,12 +1,26 @@
 {
-  "name": "notesapi",
+  "name": "notes-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Notes CRUD App with Express, MongoDB & Mongoose (MVC)",
   "license": "ISC",
   "author": "",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0",
+    "dotenv": "^16.4.5",
+    "morgan": "^1.10.0",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
