@@ -2,11 +2,11 @@
   "name": "notes-app",
   "version": "1.0.0",
   "description": "Simple Notes CRUD App — Express, MongoDB, Mongoose (MVC)",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "seed": "node src/config/seed.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node config/seed.js",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
     "docker:logs": "docker-compose logs -f"

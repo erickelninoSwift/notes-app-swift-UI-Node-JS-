@@ -1,6 +1,6 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
-const Note = require("../models/Note");
+const Note = require("./models/Note");
 const { notes } = require("../../notes.json");
 // this is the initial notes that will be displaying in our app, you can modify it as you like
 const seed = async () => {
