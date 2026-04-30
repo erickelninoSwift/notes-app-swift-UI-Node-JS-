@@ -13,7 +13,6 @@ services:
       MONGO_INITDB_DATABASE: notesdb
     volumes:
       - mongodb_data:/data/db
-      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     networks:
       - notes_network
 
@@ -36,8 +35,6 @@ services:
 
 volumes:
   mongodb_data:
-    driver: local
 
 networks:
   notes_network:
-    driver: bridge
